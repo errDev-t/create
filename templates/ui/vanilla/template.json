@@ -1,0 +1,10 @@
+{
+    "destination": "web",
+    "requires": [
+        { "template": "ui/shared", "into": "css" }
+    ],
+    "manifest": {
+        "uiPage": "index.html",
+        "files": ["index.html", "css/**/*", "js/**/*"]
+    }
+}

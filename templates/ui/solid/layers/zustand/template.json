@@ -1,0 +1,3 @@
+{
+    "requires": ["ui/shared-ts/state/zustand", "ui/solid/state"]
+}

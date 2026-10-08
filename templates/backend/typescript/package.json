@@ -1,0 +1,17 @@
+{
+    "name": "{{projectName}}",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "node build.mjs",
+        "watch": "node build.mjs --watch",
+        "typecheck": "tsc -p client && tsc -p server"
+    },
+    "devDependencies": {
+        "@citizenfx/client": "^2.0.31039-1",
+        "@citizenfx/server": "^2.0.31039-1",
+        "@types/node": "^22.0.0",
+        "esbuild": "^0.25.0",
+        "typescript": "^5.6.0"
+    }
+}

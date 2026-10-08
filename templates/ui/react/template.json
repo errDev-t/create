@@ -1,0 +1,19 @@
+{
+    "destination": "web",
+    "layerSources": [
+        "ui/shared/layers"
+    ],
+    "requires": [
+        "ui/shared-ts",
+        {
+            "template": "ui/shared",
+            "into": "src/styles"
+        }
+    ],
+    "manifest": {
+        "uiPage": "dist/index.html",
+        "files": [
+            "dist/**/*"
+        ]
+    }
+}

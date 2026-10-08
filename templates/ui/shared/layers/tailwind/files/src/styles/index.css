@@ -1,0 +1,8 @@
+/* Preflight first, so the component styles below win over its resets. */
+@import './tailwind-base.css';
+@import './tokens.css';
+@import './base.css';
+@import './components.css';
+
+@tailwind components;
+@tailwind utilities;

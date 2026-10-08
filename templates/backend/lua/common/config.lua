@@ -1,0 +1,3 @@
+Config = {
+    startingMSG = 'testing {{projectName}}'
+}

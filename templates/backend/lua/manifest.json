@@ -1,0 +1,6 @@
+{
+    "lua54": true,
+    "sharedScripts": ["common/*.lua"],
+    "clientScripts": ["client/*.lua"],
+    "serverScripts": ["server/*.lua"]
+}

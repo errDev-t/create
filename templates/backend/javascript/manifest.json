@@ -1,0 +1,5 @@
+{
+    "sharedScripts": ["shared/*.js"],
+    "clientScripts": ["client/*.js"],
+    "serverScripts": ["server/*.js"]
+}
