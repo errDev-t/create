@@ -19,6 +19,10 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
+  "files": [
+    "dist",
+    "templates"
+  ],
   "dependencies": {
     "@clack/prompts": "^1.8.1"
   },
