@@ -24,6 +24,7 @@
 - [ ] Redux works
 - [ ] Tailwind works
 - [x] shadcn works
+- [ ] shadcn (baseUi, radixUi, reactAria)
 
 ## Manifest
 

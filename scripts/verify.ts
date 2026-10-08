@@ -72,6 +72,7 @@ cases.push(
 )
 
 const workDirectory = await mkdtemp(path.join(os.tmpdir(), 'err-create-verify-'))
+const originalCwd = process.cwd()
 
 process.chdir(workDirectory)
 
@@ -272,6 +273,7 @@ if (leftovers.length) {
     console.log('FAIL  failed generations left files behind:', leftovers)
 }
 
+process.chdir(originalCwd)
 await rm(workDirectory, { recursive: true, force: true })
 
 console.log(failures ? `\n${failures} check(s) failed` : `\nAll ${cases.length + 6} checks passed`)
