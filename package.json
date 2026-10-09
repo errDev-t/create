@@ -31,6 +31,6 @@
     "@clack/prompts": "^1.8.1"
   },
   "bin": {
-    "err-create": "dist/src/index.js"
+    "err-create": "dist/index.js"
   }
 }
