@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import path from 'node:path';
 import { cancel, confirm, intro, isCancel, log, note, outro, spinner } from '@clack/prompts';
 import { promptProject } from '@/prompts/projects.js';
