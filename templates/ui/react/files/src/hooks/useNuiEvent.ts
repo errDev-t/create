@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { onNuiMessage } from '../lib/nui'
-import type { NuiMessage } from '../types'
+import { onNuiMessage } from '@/lib/nui'
+import type { NuiMessage } from '@/types'
 
 /**
  * Runs `handler` whenever the client script sends `action` with SendNUIMessage.

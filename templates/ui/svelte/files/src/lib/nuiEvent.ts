@@ -1,6 +1,6 @@
 import { onMount } from 'svelte'
 import { onNuiMessage } from './nui'
-import type { NuiMessage } from '../types'
+import type { NuiMessage } from '@/types'
 
 /**
  * Runs `handler` whenever the client script sends `action` with SendNUIMessage.

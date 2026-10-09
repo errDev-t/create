@@ -1,8 +1,8 @@
 <script lang="ts">
   import { MessageSquare, Send } from 'lucide-svelte'
-  import { dispatchNuiMessage, isBrowser } from '../lib/nui'
-  import { nuiEvent } from '../lib/nuiEvent'
-  import type { NuiMessage } from '../types'
+  import { dispatchNuiMessage, isBrowser } from '@/lib/nui'
+  import { nuiEvent } from '@/lib/nuiEvent'
+  import type { NuiMessage } from '@/types'
   import Badge from './Badge.svelte'
   import Button from './Button.svelte'
 

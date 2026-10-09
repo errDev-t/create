@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { MessageSquare, Send } from 'lucide-react'
-import { useNuiEvent } from '../hooks/useNuiEvent'
-import { dispatchNuiMessage, isBrowser } from '../lib/nui'
-import type { NuiMessage } from '../types'
+import { useNuiEvent } from '@/hooks/useNuiEvent'
+import { dispatchNuiMessage, isBrowser } from '@/lib/nui'
+import type { NuiMessage } from '@/types'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 

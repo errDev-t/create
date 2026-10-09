@@ -1,4 +1,4 @@
-import type { NuiMessage } from '../types'
+import type { NuiMessage } from '@/types'
 import { mockNui } from './mocks'
 
 declare global {

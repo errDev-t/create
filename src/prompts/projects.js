@@ -1,5 +1,5 @@
 import { isCancel, outro, text, select, confirm, } from '@clack/prompts';
-import { getSupportedLayers } from '@/templates/index.js';
+import { getSupportedLayers } from '../templates/index.js';
 function answer(value) {
     if (isCancel(value)) {
         outro('Cancelled.');
@@ -28,6 +28,7 @@ export async function promptProject() {
             { value: 'qbox', label: 'Qbox' },
             { value: 'esx', label: 'ESX' },
             { value: 'vrp', label: 'vRP' },
+            { value: 'nd', label: 'ND framework' },
         ],
     }));
     const hasUi = answer(await confirm({

@@ -5,7 +5,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import type {
     ManifestConfig,
     ManifestContribution,
-} from '@/types/manifest.js'
+} from '../types/manifest.js'
 
 export async function readTemplateManifest(
     directory: string,
@@ -130,4 +130,4 @@ export async function generateManifest(
         renderManifest(mergeManifest(contributions)),
         'utf8',
     )
-}
+}

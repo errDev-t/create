@@ -1,4 +1,4 @@
-import type { FrameworkDefinition } from '@/types/framework.js';
+import type { FrameworkDefinition } from '../../types/framework.js';
 
 const getCoreObjectLUA = "local NDCore = exports['ND_Core']";
 const getCoreObjectJS = "const NDCore = exports['ND_Core']";
@@ -28,4 +28,4 @@ export const nd: FrameworkDefinition = {
             server: [getCoreObjectTS],
         },
     },
-};
+};

@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { fetchNui, isBrowser } from '../lib/nui'
+import { fetchNui, isBrowser } from '@/lib/nui'
 import { useNuiEvent } from './useNuiEvent'
 
 /**

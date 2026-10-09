@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
-import { listFiles } from '@/utils/files.js';
+import { listFiles } from '../utils/files.js';
 export async function findPackageRoots(projectDirectory) {
     const files = (await listFiles(projectDirectory))
         .filter(file => path.posix.basename(file) === 'package.json')

@@ -1,6 +1,6 @@
 import path from 'node:path';
-import { copyTemplateFiles } from '@/utils/files.js';
-import { templatesDir } from '@/utils/paths.js';
+import { copyTemplateFiles } from '../utils/files.js';
+import { templatesDir } from '../utils/paths.js';
 import { readTemplateManifest } from './manifest.js';
 import { templateVariables } from './variables.js';
 export async function generateBackend(config, projectDirectory) {

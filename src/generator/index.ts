@@ -1,7 +1,7 @@
 import path from 'node:path'
 import { mkdir, readdir } from 'node:fs/promises'
-import type { ProjectConfig } from '@/types/prompt.js'
-import type { ManifestContribution } from '@/types/manifest.js'
+import type { ProjectConfig } from '../types/prompt.js'
+import type { ManifestContribution } from '../types/manifest.js'
 
 import { generateBackend } from './backend.js'
 import { generateFramework, getFramework } from './framework.js'

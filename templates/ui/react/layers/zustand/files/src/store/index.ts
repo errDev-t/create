@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { isBrowser } from '../lib/nui'
+import { isBrowser } from '@/lib/nui'
 
 interface AppState {
   visible: boolean

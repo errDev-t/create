@@ -1,10 +1,10 @@
 import path from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
-import { frameworks } from '@/definitions/frameworks/index.js'
-import { listFiles, matchesAnyGlob } from '@/utils/files.js'
-import type { Framework, ProjectConfig } from '@/types/prompt.js'
-import type { FrameworkDefinition } from '@/types/framework.js'
-import type { ManifestContribution } from '@/types/manifest.js'
+import { frameworks } from '../definitions/frameworks/index.js'
+import { listFiles, matchesAnyGlob } from '../utils/files.js'
+import type { Framework, ProjectConfig } from '../types/prompt.js'
+import type { FrameworkDefinition } from '../types/framework.js'
+import type { ManifestContribution } from '../types/manifest.js'
 
 export function getFramework(name: Framework): FrameworkDefinition {
     const framework = frameworks[name]
@@ -76,4 +76,4 @@ export async function generateFramework(
     }
 
     return framework.manifest ?? {}
-}
+}

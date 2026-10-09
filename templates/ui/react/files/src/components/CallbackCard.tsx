@@ -1,6 +1,6 @@
 import { LoaderCircle, MapPin, TriangleAlert } from 'lucide-react'
-import { useNuiCallback } from '../hooks/useNuiCallback'
-import type { Position } from '../types'
+import { useNuiCallback } from '@/hooks/useNuiCallback'
+import type { Position } from '@/types'
 import { Button } from './ui/button'
 
 /** Calls the getClientData NUI callback and shows what comes back. */

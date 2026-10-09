@@ -1,5 +1,5 @@
 import { createSignal } from 'solid-js'
-import { fetchNui, isBrowser } from '../lib/nui'
+import { fetchNui, isBrowser } from '@/lib/nui'
 import { createNuiEvent } from './createNuiEvent'
 
 /**

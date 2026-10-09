@@ -1,4 +1,4 @@
-import type { FrameworkDefinition } from '@/types/framework.js'
+import type { FrameworkDefinition } from '../../types/framework.js'
 
 export const esx: FrameworkDefinition = {
     manifest: {

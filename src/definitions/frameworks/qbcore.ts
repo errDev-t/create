@@ -1,4 +1,4 @@
-import type { FrameworkDefinition } from '@/types/framework.js'
+import type { FrameworkDefinition } from '../../types/framework.js'
 
 const getCoreObjectJS = "const QBCore = exports['qb-core'].GetCoreObject()"
 const getCoreObjectLUA = "local QBCore = exports['qb-core']:GetCoreObject()"
@@ -25,4 +25,4 @@ export const qbcore: FrameworkDefinition = {
             server: [getCoreObjectTS],
         },
     },
-}
+}

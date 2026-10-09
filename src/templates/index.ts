@@ -1,8 +1,8 @@
 import path from 'node:path'
 import { readdir, readFile } from 'node:fs/promises'
-import { templatesDir } from '@/utils/paths.js'
-import type { ManifestContribution } from '@/types/manifest.js'
-import type { PackagePatch, Template, TemplateMetadata } from '@/types/template.js'
+import { templatesDir } from '../utils/paths.js'
+import type { ManifestContribution } from '../types/manifest.js'
+import type { PackagePatch, Template, TemplateMetadata } from '../types/template.js'
 
 const isObject = (value: unknown): value is Record<string, unknown> =>
     typeof value === 'object' && value !== null && !Array.isArray(value)
@@ -171,4 +171,4 @@ export async function getSupportedLayers(ui: string): Promise<Set<string>> {
     }
 
     return new Set(names)
-}
+}

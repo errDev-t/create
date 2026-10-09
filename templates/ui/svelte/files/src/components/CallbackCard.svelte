@@ -1,7 +1,7 @@
 <script lang="ts">
   import { LoaderCircle, MapPin, TriangleAlert } from 'lucide-svelte'
-  import { nuiCallback } from '../lib/nuiCallback.svelte'
-  import type { Position } from '../types'
+  import { nuiCallback } from '@/lib/nuiCallback.svelte'
+  import type { Position } from '@/types'
   import Button from './Button.svelte'
 
   // Calls the getClientData NUI callback and shows what comes back.

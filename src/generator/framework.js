@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { readFile, writeFile } from 'node:fs/promises';
-import { frameworks } from '@/definitions/frameworks/index.js';
-import { listFiles, matchesAnyGlob } from '@/utils/files.js';
+import { frameworks } from '../definitions/frameworks/index.js';
+import { listFiles, matchesAnyGlob } from '../utils/files.js';
 export function getFramework(name) {
     const framework = frameworks[name];
     if (!framework) {

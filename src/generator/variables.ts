@@ -1,4 +1,4 @@
-import type { ProjectConfig } from '@/types/prompt.js'
+import type { ProjectConfig } from '../types/prompt.js'
 
 export function templateVariables(config: ProjectConfig): Record<string, string> {
     return {

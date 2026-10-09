@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { readdir, readFile } from 'node:fs/promises';
-import { templatesDir } from '@/utils/paths.js';
+import { templatesDir } from '../utils/paths.js';
 const isObject = (value) => typeof value === 'object' && value !== null && !Array.isArray(value);
 const isStringArray = (value) => Array.isArray(value) && value.every(item => typeof item === 'string');
 const isStringRecord = (value) => isObject(value) && Object.values(value).every(item => typeof item === 'string');

@@ -1,6 +1,6 @@
 import { createSignal, onCleanup } from 'solid-js'
-import { fetchNui } from '../lib/nui'
-import { getVisible, setVisible, subscribe } from '../store'
+import { fetchNui } from '@/lib/nui'
+import { getVisible, setVisible, subscribe } from '@/store'
 import { createNuiEvent } from './createNuiEvent'
 
 /**

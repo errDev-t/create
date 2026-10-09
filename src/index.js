@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-
 import path from 'node:path';
 import { cancel, confirm, intro, isCancel, log, note, outro, spinner } from '@clack/prompts';
-import { promptProject } from '@/prompts/projects.js';
-import { generateProject } from '@/generator/index.js';
-import { findPackageRoots, installDependencies, } from '@/generator/install.js';
+import { promptProject } from './prompts/projects.js';
+import { generateProject } from './generator/index.js';
+import { findPackageRoots, installDependencies, } from './generator/install.js';
 const labels = {
     lua: 'Lua',
     javascript: 'JavaScript',

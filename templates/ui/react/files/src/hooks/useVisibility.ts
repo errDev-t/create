@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { fetchNui, isBrowser } from '../lib/nui'
+import { fetchNui, isBrowser } from '@/lib/nui'
 import { useNuiEvent } from './useNuiEvent'
 
 /**

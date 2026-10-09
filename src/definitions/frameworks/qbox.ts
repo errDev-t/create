@@ -1,4 +1,4 @@
-import type { FrameworkDefinition } from '@/types/framework.js'
+import type { FrameworkDefinition } from '../../types/framework.js'
 
 export const qbox: FrameworkDefinition = {
     manifest: {
@@ -10,4 +10,4 @@ export const qbox: FrameworkDefinition = {
             '@qbx_core/modules/playerdata.lua',
         ],
     },
-}
+}

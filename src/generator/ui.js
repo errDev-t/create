@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { readFile, writeFile } from 'node:fs/promises';
-import { copyTemplateFiles } from '@/utils/files.js';
-import { loadTemplate, resolveLayerTemplate } from '@/templates/index.js';
+import { copyTemplateFiles } from '../utils/files.js';
+import { loadTemplate, resolveLayerTemplate } from '../templates/index.js';
 import { templateVariables } from './variables.js';
 function layerIds(config) {
     const layers = [];

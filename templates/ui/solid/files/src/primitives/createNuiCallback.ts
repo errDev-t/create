@@ -1,5 +1,5 @@
 import { createSignal } from 'solid-js'
-import { fetchNui } from '../lib/nui'
+import { fetchNui } from '@/lib/nui'
 
 type State<T> =
   | { status: 'idle' }

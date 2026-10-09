@@ -5,7 +5,7 @@ import type {
     Styling,
     StateManager,
     ProjectConfig,
-} from '@/types/prompt.js'
+} from '../types/prompt.js'
 
 import {
     isCancel,
@@ -15,7 +15,7 @@ import {
     confirm,
 } from '@clack/prompts'
 
-import { getSupportedLayers } from '@/templates/index.js'
+import { getSupportedLayers } from '../templates/index.js'
 
 function answer<V>(value: V): Exclude<V, symbol> {
     if (isCancel(value)) {
@@ -49,6 +49,7 @@ export async function promptProject(): Promise<ProjectConfig> {
             { value: 'qbox', label: 'Qbox' },
             { value: 'esx', label: 'ESX' },
             { value: 'vrp', label: 'vRP' },
+            { value: 'nd', label: 'ND framework' },
         ],
     }))
 

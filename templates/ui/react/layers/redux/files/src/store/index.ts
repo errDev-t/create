@@ -1,5 +1,5 @@
 import { configureStore, createSlice, type PayloadAction } from '@reduxjs/toolkit'
-import { isBrowser } from '../lib/nui'
+import { isBrowser } from '@/lib/nui'
 
 const appSlice = createSlice({
   name: 'app',

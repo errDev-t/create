@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { LoaderCircle, MapPin, TriangleAlert } from 'lucide-vue-next'
-import { useNuiCallback } from '../composables/useNuiCallback'
-import type { Position } from '../types'
+import { useNuiCallback } from '@/composables/useNuiCallback'
+import type { Position } from '@/types'
 import Button from './Button.vue'
 
 // Calls the getClientData NUI callback and shows what comes back.

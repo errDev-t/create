@@ -1,7 +1,7 @@
 import { onMount } from 'svelte'
 import { fetchNui } from './nui'
 import { nuiEvent } from './nuiEvent'
-import { getVisible, setVisible, subscribe } from '../store'
+import { getVisible, setVisible, subscribe } from '@/store'
 
 /**
  * Whether the UI is shown (kept in the store). The client script toggles it with

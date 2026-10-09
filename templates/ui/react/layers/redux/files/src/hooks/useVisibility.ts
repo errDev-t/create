@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchNui } from '../lib/nui'
-import { setVisible, type RootState } from '../store'
+import { fetchNui } from '@/lib/nui'
+import { setVisible, type RootState } from '@/store'
 import { useNuiEvent } from './useNuiEvent'
 
 /**

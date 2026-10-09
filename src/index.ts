@@ -1,14 +1,16 @@
+#!/usr/bin/env node
+
 import path from 'node:path'
 import { cancel, confirm, intro, isCancel, log, note, outro, spinner } from '@clack/prompts'
-import { promptProject } from '@/prompts/projects.js'
-import { generateProject } from '@/generator/index.js'
+import { promptProject } from './prompts/projects.js'
+import { generateProject } from './generator/index.js'
 import {
     findPackageRoots,
     installDependencies,
     type InstallFailure,
     type PackageRoot,
-} from '@/generator/install.js'
-import type { ProjectConfig } from '@/types/prompt.js'
+} from './generator/install.js'
+import type { ProjectConfig } from './types/prompt.js'
 
 const labels: Record<string, string> = {
     lua: 'Lua',

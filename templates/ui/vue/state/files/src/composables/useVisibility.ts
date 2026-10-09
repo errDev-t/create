@@ -1,6 +1,6 @@
 import { onUnmounted, ref } from 'vue'
-import { fetchNui } from '../lib/nui'
-import { getVisible, setVisible, subscribe } from '../store'
+import { fetchNui } from '@/lib/nui'
+import { getVisible, setVisible, subscribe } from '@/store'
 import { useNuiEvent } from './useNuiEvent'
 
 /**

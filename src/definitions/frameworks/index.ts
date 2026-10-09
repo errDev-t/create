@@ -1,5 +1,5 @@
-import type { Framework } from '@/types/prompt.js'
-import type { FrameworkDefinition } from '@/types/framework.js'
+import type { Framework } from '../../types/prompt.js'
+import type { FrameworkDefinition } from '../../types/framework.js'
 
 import { standalone } from './standalone.js'
 import { qbox } from './qbox.js'
@@ -17,4 +17,4 @@ export const frameworks: Partial<Record<Framework, FrameworkDefinition>> = {
     nd,
     esx,
     vrp,
-}
+}

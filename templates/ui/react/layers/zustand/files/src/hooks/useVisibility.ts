@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
-import { fetchNui } from '../lib/nui'
-import { useAppStore } from '../store'
+import { fetchNui } from '@/lib/nui'
+import { useAppStore } from '@/store'
 import { useNuiEvent } from './useNuiEvent'
 
 /**
