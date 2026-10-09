@@ -8,5 +8,7 @@ const isBuilt = currentDirPath.includes(`${path.sep}dist${path.sep}`);
 
 export const templatesDir = path.resolve(
     currentDirPath,
-    isBuilt ? '../../../templates' : '../../templates',
+    isBuilt ? '../../templates' : '../../templates',
 );
+
+console.log(`Templates directory resolved to: ${templatesDir}, isBuilt: ${isBuilt}, currentDirPath: ${currentDirPath} currentFilePath: ${currentFilePath}`);

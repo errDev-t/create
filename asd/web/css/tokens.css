@@ -1,0 +1,49 @@
+/*
+ * Design tokens shared by every UI template (React, Vue, Svelte, Solid, Vanilla).
+ * Color names follow shadcn/ui so the optional shadcn layer picks them up unchanged.
+ */
+:root {
+    color-scheme: dark;
+
+    /* Color: the shadcn/ui default (neutral) dark theme. HSL channels, used as hsl(var(--name)) or hsl(var(--name) / 0.5), as in shadcn/ui */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 69% 58%; /* not part of shadcn/ui; used by the "In game" badge */
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+
+    /* Typography (system fonts only: NUI has no guaranteed network access) */
+    --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    --text-xs: 12px;
+    --text-sm: 13px;
+    --text-base: 14px;
+    --text-lg: 16px;
+    --leading: 1.5;
+
+    /* Shape */
+    --radius: 10px;
+    --shadow-window: 0 24px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.04);
+
+    /* Motion */
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --duration-in: 200ms;
+    --duration-out: 100ms;
+    --duration-fast: 140ms;
+}
