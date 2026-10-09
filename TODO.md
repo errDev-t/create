@@ -57,7 +57,7 @@
 - [ ] `npm run build` passes
 - [ ] `npm pack --dry-run` looks correct
 - [ ] Test packaged version
-- [ ] Test `npx @err/create`
+- [ ] Test `npx err-create`
 - [ ] README ready
 - [ ] LICENSE ready
 - [ ] Publish to npm
