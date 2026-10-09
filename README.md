@@ -1,13 +1,13 @@
 <div align="center">
 
-# @noterr/create
+# err-create
 
 **Scaffold a FiveM resource in one command.**
 Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. A `fxmanifest.lua` that matches what was actually generated.
 
-[![npm version](https://img.shields.io/npm/v/@noterr/create?color=111&label=npm)](https://www.npmjs.com/package/@noterr/create)
-[![license](https://img.shields.io/npm/l/@noterr/create?color=111)](https://www.npmjs.com/package/@noterr/create)
-[![Discord](https://img.shields.io/badge/discord-ERR-111?logo=discord&logoColor=white)](https://discord.gg/err)
+[![npm version](https://img.shields.io/npm/v/err-create?color=111&label=npm)](https://www.npmjs.com/package/err-create)
+[![license](https://img.shields.io/npm/l/err-create?color=111)](https://www.npmjs.com/package/err-create)
+[![Discord](https://img.shields.io/badge/discord-ERR-111?logo=discord&logoColor=white)](https://discord.gg/qAhtxRMsb)
 
 </div>
 
@@ -17,7 +17,7 @@ Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. 
 
 <div align="center">
 
-![@noterr/create terminal preview](https://raw.githubusercontent.com/errDev-t/create/main/docs/assets/terminal.gif)
+![err-create terminal preview](https://raw.githubusercontent.com/errDev-t/create/main/docs/assets/terminal.gif)
 
 <sub>The interactive CLI, start to finish.</sub>
 
@@ -25,14 +25,14 @@ Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. 
 
 ## Why
 
-Starting a FiveM resource usually means the same setup work: a manifest, a folder layout, a build step for TypeScript, NUI plumbing, a Vite config, and wiring for your framework. `@noterr/create` does that once, from your answers, and gets out of the way.
+Starting a FiveM resource usually means the same setup work: a manifest, a folder layout, a build step for TypeScript, NUI plumbing, a Vite config, and wiring for your framework. `err-create` does that once, from your answers, and gets out of the way.
 
 It only generates what you select. Choose no state manager and there is no store. Choose plain CSS and there is no Tailwind. Choose Vanilla and there is no build tooling at all.
 
 ## Install
 
 ```bash
-npx @noterr/create
+npx err-create
 ```
 
 Or with `npm create`:
@@ -44,7 +44,7 @@ npm create @noterr
 ## Quick start
 
 ```bash
-npx @noterr/create
+npx err-create
 ```
 
 The CLI asks, in this order:
@@ -233,7 +233,7 @@ Found a bug, stuck on something, or have an idea? Come talk to us in the [ERR Di
 
 ## Links
 
-- npm: [@noterr/create](https://www.npmjs.com/package/@noterr/create)
+- npm: [err-create](https://www.npmjs.com/package/err-create)
 - GitHub: [errDev-t/create](https://github.com/errDev-t/create)
 - Discord: [discord.gg/err](https://discord.gg/qGQNRFMAAG)
 

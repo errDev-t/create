@@ -10,5 +10,3 @@ export const templatesDir = path.resolve(
     currentDirPath,
     isBuilt ? '../../templates' : '../../templates',
 );
-
-console.log(`Templates directory resolved to: ${templatesDir}, isBuilt: ${isBuilt}, currentDirPath: ${currentDirPath} currentFilePath: ${currentFilePath}`);

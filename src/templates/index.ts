@@ -115,8 +115,6 @@ export async function loadTemplate(id: string): Promise<Template> {
 
     let content: string
 
-    console.log(`Loading template "${id}" from ${metadataPath} in ${directory}...`)
-
     try {
         content = await readFile(metadataPath, 'utf8')
     } catch {
