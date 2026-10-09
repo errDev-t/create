@@ -1,3 +1,0 @@
-Config = {
-    startingMSG = 'testing asd'
-}

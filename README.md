@@ -35,12 +35,6 @@ It only generates what you select. Choose no state manager and there is no store
 npx err-create
 ```
 
-Or with `npm create`:
-
-```bash
-npm create @noterr
-```
-
 ## Quick start
 
 ```bash

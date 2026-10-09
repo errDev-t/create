@@ -16,4 +16,4 @@ export type FrameworkDefinition = {
      * is meaningless in a JavaScript file.
      */
     inject?: Partial<Record<BackendLanguage, SourceInjection>>
-}
+}

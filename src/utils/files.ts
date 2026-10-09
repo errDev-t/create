@@ -56,6 +56,7 @@ async function copyDirectory(
 
         const content = await readFile(sourcePath)
 
+        // Keep binary files unchanged.
         if (content.includes(0)) {
             await writeFile(destinationPath, content)
             continue
@@ -71,7 +72,6 @@ async function copyDirectory(
     }
 }
 
-// Every file under a directory, as forward-slash paths relative to it.
 export async function listFiles(
     directory: string,
     prefix = '',
@@ -94,15 +94,15 @@ export async function listFiles(
             files.push(
                 ...await listFiles(directory, relativePath),
             )
-        } else {
-            files.push(relativePath)
+            continue
         }
+
+        files.push(relativePath)
     }
 
     return files
 }
 
-// Convert FiveM-style globs to a regular expression.
 function globToRegExp(pattern: string) {
     let source = ''
 
@@ -132,7 +132,5 @@ export function matchesAnyGlob(
     file: string,
     patterns: string[],
 ) {
-    return patterns.some(
-        pattern => globToRegExp(pattern).test(file),
-    )
-}
+    return patterns.some(pattern => globToRegExp(pattern).test(file))
+}

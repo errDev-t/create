@@ -54,7 +54,8 @@ function summary(config: ProjectConfig, projectDirectory: string) {
     return lines.join('\n')
 }
 
-const cd = (directory: string) => directory === '.' ? '' : `cd ${directory} && `
+const cd = (directory: string) =>
+    directory === '.' ? '' : `cd ${directory} && `
 
 intro(
     'Hello, ERR Create is here to help you create a new FiveM resource!',
@@ -83,7 +84,6 @@ try {
     log.warn(`Could not inspect the generated packages: ${error instanceof Error ? error.message : error}`)
 }
 
-// The last interactive step, after everything has been generated.
 if (roots.length) {
     const answer = await confirm({
         message: 'Would you like to install dependencies?',
@@ -121,17 +121,17 @@ const nextSteps = roots
     .filter(root => root.hasBuildScript)
     .map(root => `${cd(root.directory)}npm run build`)
 
-if (nextSteps.length) {
-    const prefix = path.relative(process.cwd(), projectDirectory) || '.'
+if (nextSteps.length > 0) {
+    const projectPath = path.relative(process.cwd(), projectDirectory) || '.'
+    const commands = [
+        `cd ${projectPath}`,
+        ...(!installed && roots.length > 0
+            ? roots.map(root => `${cd(root.directory)}npm install`)
+            : []),
+        ...nextSteps,
+    ]
 
-    note(
-        [
-            `cd ${prefix}`,
-            ...(!installed && roots.length ? roots.map(root => cd(root.directory) + 'npm install') : []),
-            ...nextSteps,
-        ].join('\n'),
-        'Next steps',
-    )
+    note(commands.join('\n'), 'Next steps')
 }
 
 outro(failures.length ? 'Done, with errors above.' : 'Happy scripting!')

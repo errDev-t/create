@@ -8,8 +8,8 @@ import { vrp } from './vrp.js'
 import { nd } from './nd.js'
 import { esx } from './esx.js'
 
-// A framework that is not listed here is rejected with "not supported yet".
-// Add a definition file and one line here; nothing else needs to change.
+// A framework that is not listed here is rejected withhhhhh """not supported yet"""!!!!!!!!!!!!!!!.
+// Add a definition file and one line here; nothing else needs to change thanksss my pleausee yeahh.
 export const frameworks: Partial<Record<Framework, FrameworkDefinition>> = {
     standalone,
     qbox,

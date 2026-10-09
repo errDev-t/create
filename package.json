@@ -1,7 +1,7 @@
 {
   "name": "err-create",
   "version": "1.0.9",
-  "description": "",
+  "description": "A CLI tool to create new 5m projects with ease.",
   "main": "index.ts",
   "scripts": {
     "dev": "tsx src/index.ts",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "@types/node": "^26.6.3",

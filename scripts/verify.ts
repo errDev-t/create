@@ -1,3 +1,9 @@
+// AI GENERATED FILE - DO NOT EDIT (JUST TO MAKE SURE IT WORKS)
+// AI GENERATED FILE - DO NOT EDIT (JUST TO MAKE SURE IT WORKS)
+// AI GENERATED FILE - DO NOT EDIT (JUST TO MAKE SURE IT WORKS)
+// AI GENERATED FILE - DO NOT EDIT (JUST TO MAKE SURE IT WORKS)
+// AI GENERATED FILE - DO NOT EDIT (JUST TO MAKE SURE IT WORKS)
+
 // Generates a matrix of projects and checks their structure and fxmanifest.lua.
 // Run with: npm run verify   (no network or npm install needed)
 

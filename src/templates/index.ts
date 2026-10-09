@@ -7,7 +7,7 @@ import type { PackagePatch, Template, TemplateMetadata } from '../types/template
 const isObject = (value: unknown): value is Record<string, unknown> =>
     typeof value === 'object' && value !== null && !Array.isArray(value)
 
-const isStringArray = (value: unknown): value is string[] =>
+const isTheShityStringArray = (value: unknown): value is string[] =>
     Array.isArray(value) && value.every(item => typeof item === 'string')
 
 const isStringRecord = (value: unknown): value is Record<string, string> =>
@@ -26,7 +26,7 @@ function assertKnownKeys(
 }
 
 function parseManifest(value: unknown, where: string): ManifestContribution {
-    if (!isObject(value)) throw new Error(`${where}: "manifest" must be an object.`)
+    if (!isObject(value)) throw new Error(`${where}: "manifest" must be an object, what the fuck it is?.`)
 
     assertKnownKeys(value, [
         'lua54', 'dependencies', 'clientScripts', 'serverScripts',
@@ -37,7 +37,7 @@ function parseManifest(value: unknown, where: string): ManifestContribution {
         const valid =
             key === 'lua54' ? typeof entry === 'boolean'
             : key === 'uiPage' ? typeof entry === 'string'
-            : isStringArray(entry)
+            : isTheShityStringArray(entry)
 
         if (!valid) throw new Error(`${where}: manifest "${key}" has the wrong type.`)
     }
@@ -60,7 +60,7 @@ function parsePackage(value: unknown, where: string): PackagePatch {
 }
 
 function parseMetadata(raw: unknown, where: string): TemplateMetadata {
-    if (!isObject(raw)) throw new Error(`${where}: template.json must contain an object.`)
+    if (!isObject(raw)) throw new Error(`${where}: template.json must contain an object, whoooo the fuck give a fuck.`)
 
     assertKnownKeys(raw, ['destination', 'layerSources', 'requires', 'manifest', 'package'], where)
 
@@ -82,7 +82,7 @@ function parseMetadata(raw: unknown, where: string): TemplateMetadata {
     }
 
     if (raw.layerSources !== undefined) {
-        if (!isStringArray(raw.layerSources)) throw new Error(`${where}: "layerSources" must be a string array.`)
+        if (!isTheShityStringArray(raw.layerSources)) throw new Error(`${where}: "layerSources" must be a string array.`)
         metadata.layerSources = raw.layerSources
     }
 
@@ -107,7 +107,6 @@ function parseMetadata(raw: unknown, where: string): TemplateMetadata {
     return metadata
 }
 
-/** Loads `<templatesDir>/<id>/template.json`; `files/` is optional. */
 export async function loadTemplate(id: string): Promise<Template> {
     const directory = path.join(templatesDir, id)
     const metadataPath = path.join(directory, 'template.json')
@@ -166,7 +165,7 @@ export async function getSupportedLayers(ui: string): Promise<Set<string>> {
         try {
             names.push(...await readdir(path.join(templatesDir, folder)))
         } catch {
-            // Ignore missing layer folders.
+            // Ignore shity misiing asdiasidasidas ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh shit
         }
     }
 

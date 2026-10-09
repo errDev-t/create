@@ -4,9 +4,4 @@ import { fileURLToPath } from 'node:url';
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirPath = path.dirname(currentFilePath);
 
-const isBuilt = currentDirPath.includes(`${path.sep}dist${path.sep}`);
-
-export const templatesDir = path.resolve(
-    currentDirPath,
-    isBuilt ? '../../templates' : '../../templates',
-);
+export const templatesDir = path.resolve(currentDirPath, '../../templates');
