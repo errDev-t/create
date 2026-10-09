@@ -235,7 +235,7 @@ Found a bug, stuck on something, or have an idea? Come talk to us in the [ERR Di
 
 - npm: [@noterr/create](https://www.npmjs.com/package/@noterr/create)
 - GitHub: [errDev-t/create](https://github.com/errDev-t/create)
-- Discord: [discord.gg/err](https://discord.gg/err)
+- Discord: [discord.gg/err](https://discord.gg/qGQNRFMAAG)
 
 ## License
 
