@@ -1,8 +1,8 @@
 {
   "name": "err-create",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A CLI tool to create new 5m projects with ease.",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",

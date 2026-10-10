@@ -41,6 +41,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Build CLI
+        run: npm run build
+
       - name: Verify generator output
         run: npm run verify
 
