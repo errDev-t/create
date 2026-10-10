@@ -17,7 +17,7 @@ Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. 
 
 <div align="center">
 
-![err-create terminal preview](https://raw.githubusercontent.com/errDev-t/create/main/docs/assets/terminal.gif)
+![err-create terminal preview](https://github.com/user-attachments/assets/3857cfe5-712d-4311-b5b1-55a3c59630e3)
 
 <sub>The interactive CLI, start to finish.</sub>
 
