@@ -15,13 +15,9 @@ Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. 
 
 ## Preview
 
-<div align="center">
+![ERR Create terminal preview](https://github.com/user-attachments/assets/3857cfe5-712d-4311-b5b1-55a3c59630e3)
 
-![err-create terminal preview](https://github.com/user-attachments/assets/3857cfe5-712d-4311-b5b1-55a3c59630e3)
-
-<sub>The interactive CLI, start to finish.</sub>
-
-</div>
+*The interactive CLI, start to finish.*
 
 ## Why
 
@@ -233,4 +229,4 @@ Found a bug, stuck on something, or have an idea? Come talk to us in the [ERR Di
 
 ## License
 
-ISC
+MIT
