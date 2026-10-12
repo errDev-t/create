@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { MessageSquare, Send } from 'lucide-vue-next'
 import { useNuiEvent } from '@/composables/useNuiEvent'
 import { dispatchNuiMessage, isBrowser } from '@/lib/nui'
-import type { NuiMessage } from '@/types'
+import type { NuiMessage } from '@/types/index'
 import Badge from './Badge.vue'
 import Button from './Button.vue'
 

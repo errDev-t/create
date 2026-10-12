@@ -1,7 +1,7 @@
 import { For, Match, Show, Switch } from 'solid-js'
 import { LoaderCircle, MapPin, TriangleAlert } from 'lucide-solid'
 import { createNuiCallback } from '@/primitives/createNuiCallback'
-import type { Position } from '@/types'
+import type { Position } from '@/types/index'
 import { Button } from './Button'
 
 /** Calls the getClientData NUI callback and shows what comes back. */
@@ -10,7 +10,6 @@ export function CallbackCard() {
 
   const loading = () => state().status === 'loading'
 
-  // Narrow the state union for each branch below.
   const failed = () => {
     const current = state()
 

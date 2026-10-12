@@ -7,14 +7,12 @@ import { useNuiEvent } from './useNuiEvent'
  * SendNUIMessage({ action = 'showUi', data = true | false }).
  */
 export function useVisibility() {
-  // In a browser there is no client script to open the UI, so start open.
   const [visible, setVisible] = useState(isBrowser)
 
   useNuiEvent<boolean>('showUi', show => setVisible(show !== false))
 
   const show = useCallback(() => setVisible(true), [])
 
-  // Tells the client script to release NUI focus.
   const close = useCallback(() => {
     setVisible(false)
     fetchNui('hideFrame').catch(() => {})

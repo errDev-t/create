@@ -2,11 +2,10 @@ import { useState } from 'react'
 import { MessageSquare, Send } from 'lucide-react'
 import { useNuiEvent } from '@/hooks/useNuiEvent'
 import { dispatchNuiMessage, isBrowser } from '@/lib/nui'
-import type { NuiMessage } from '@/types'
+import type { NuiMessage } from '@/types/index'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 
-/** Shows the latest message the client script sent with SendNUIMessage. */
 export function MessageCard() {
   const [last, setLast] = useState<{ message: NuiMessage; time: Date } | null>(null)
 

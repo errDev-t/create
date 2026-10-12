@@ -1,6 +1,6 @@
 import { createSignal, onCleanup } from 'solid-js'
 import { fetchNui } from '@/lib/nui'
-import { getVisible, setVisible, subscribe } from '@/store'
+import { getVisible, setVisible, subscribe } from '@/store/'
 import { createNuiEvent } from './createNuiEvent'
 
 /**
@@ -16,7 +16,6 @@ export function createVisibility() {
 
   const show = () => setVisible(true)
 
-  // Tells the client script to release NUI focus.
   const close = () => {
     setVisible(false)
     fetchNui('hideFrame').catch(() => {})

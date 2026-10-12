@@ -1,7 +1,3 @@
-/**
- * Browser-only responses for fetchNui. Add one for every RegisterNUICallback
- * in your client script. Open the page with ?nuiError to simulate a failure.
- */
 const mocks: Record<string, (data: unknown) => unknown> = {
     hideFrame: () => ({}),
     getClientData: () => ({ x: 215.76, y: -810.12, z: 30.73 }),

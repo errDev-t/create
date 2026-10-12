@@ -6,4 +6,11 @@ import './styles/index.css'
 // Lets the stylesheet draw a backdrop when previewing outside the game.
 if (isBrowser()) document.documentElement.dataset.env = 'browser'
 
-render(() => <App />, document.getElementById('root')!)
+render(
+    () => (
+        <ErrorBoundary>
+            <App />
+        </ErrorBoundary>
+    ),
+    document.getElementById('root')!,
+)

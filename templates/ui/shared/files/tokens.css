@@ -3,7 +3,7 @@
  * Color names follow shadcn/ui so the optional shadcn layer picks them up unchanged.
  */
 :root {
-    color-scheme: dark;
+    color-scheme: normal;
 
     /* Color: the shadcn/ui default (neutral) dark theme. HSL channels, used as hsl(var(--name)) or hsl(var(--name) / 0.5), as in shadcn/ui */
     --background: 0 0% 3.9%;

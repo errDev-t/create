@@ -1,6 +1,6 @@
 import { onCleanup, onMount } from 'solid-js'
 import { onNuiMessage } from '@/lib/nui'
-import type { NuiMessage } from '@/types'
+import type { NuiMessage } from '@/types/index'
 
 /**
  * Runs `handler` whenever the client script sends `action` with SendNUIMessage.

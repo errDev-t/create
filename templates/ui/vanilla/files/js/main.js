@@ -2,12 +2,11 @@ const browser = isBrowser()
 
 const $ = id => document.getElementById(id)
 
-// Lets the stylesheet draw a backdrop when previewing outside the game.
 if (browser) document.documentElement.dataset.env = 'browser'
 
-// ---------- Window ----------
+// ---------- Windowwwwwwwwwwwwwwwwwwwwwwwwwww
 
-let visible = browser // In a browser there is no client script to open the UI.
+let visible = browser
 
 function setVisible(value) {
     visible = value
@@ -15,13 +14,11 @@ function setVisible(value) {
     $('reopen').toggleAttribute('hidden', !(browser && !value))
 }
 
-// Tells the client script to release NUI focus.
 function close() {
     setVisible(false)
     fetchNui('hideFrame').catch(() => {})
 }
 
-// The client script toggles the UI with SendNUIMessage({ action = 'showUi', data = true | false }).
 onNuiMessage('showUi', show => setVisible(show !== false))
 
 window.addEventListener('keydown', event => {
@@ -37,7 +34,6 @@ $('status').textContent = browser ? 'Browser preview with mocked NUI callbacks' 
 
 // ---------- Client to UI ----------
 
-// Shows the latest message the client script sent with SendNUIMessage.
 onNuiMessage('*', (data, message) => {
     $('message-action').textContent = message.action
     $('message-data').textContent = JSON.stringify(data)
@@ -54,7 +50,6 @@ if (browser) {
 
 // ---------- UI to client ----------
 
-// Shows the part of the card that matches idle | loading | error | success.
 function setStatus(status) {
     document.querySelectorAll('#callback [data-state]').forEach(element => {
         element.toggleAttribute('hidden', element.dataset.state !== status)
@@ -65,7 +60,6 @@ function setStatus(status) {
     document.querySelector('#fetch [data-icon="loading"]').toggleAttribute('hidden', status !== 'loading')
 }
 
-// Calls the getClientData NUI callback and shows what comes back.
 async function fetchPosition() {
     setStatus('loading')
 

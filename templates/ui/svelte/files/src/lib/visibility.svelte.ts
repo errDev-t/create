@@ -6,7 +6,6 @@ import { nuiEvent } from './nuiEvent'
  * SendNUIMessage({ action = 'showUi', data = true | false }).
  */
 export function createVisibility() {
-  // In a browser there is no client script to open the UI, so start open.
   let visible = $state(isBrowser())
 
   nuiEvent<boolean>('showUi', show => {
@@ -22,7 +21,6 @@ export function createVisibility() {
       visible = true
     },
 
-    // Tells the client script to release NUI focus.
     close() {
       visible = false
       fetchNui('hideFrame').catch(() => {})

@@ -12,6 +12,7 @@ body,
     margin: 0;
 }
 
+html,
 body {
     background: transparent;
     color: hsl(var(--foreground));
@@ -20,11 +21,11 @@ body {
     overflow: hidden;
 }
 
-/* Outside the game there is no scene behind the UI, so draw one. */
 :root[data-env='browser'] body {
-    background:
-        radial-gradient(900px 500px at 50% 0%, hsl(var(--foreground) / 0.06), transparent 60%),
-        hsl(var(--background));
+    background-image: url('https://cdn.discordapp.com/attachments/1314312680600764487/1558906707709657210/image.png?ex=6acd2482&is=6acbd302&hm=13bd8a4bb94409c37584eb2016837d9cb234d84f83d6e58a9552d0938196f695&');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Author display rules (.btn { display: inline-flex }) would otherwise beat the hidden attribute. */

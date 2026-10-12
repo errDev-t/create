@@ -3,7 +3,6 @@ import { useNuiCallback } from '@/hooks/useNuiCallback'
 import type { Position } from '@/types'
 import { Button } from './ui/button'
 
-/** Calls the getClientData NUI callback and shows what comes back. */
 export function CallbackCard() {
   const { state, run } = useNuiCallback<Position>('getClientData')
 

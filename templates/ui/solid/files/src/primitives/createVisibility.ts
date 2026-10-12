@@ -14,7 +14,6 @@ export function createVisibility() {
 
   const show = () => setVisible(true)
 
-  // Tells the client script to release NUI focus.
   const close = () => {
     setVisible(false)
     fetchNui('hideFrame').catch(() => {})

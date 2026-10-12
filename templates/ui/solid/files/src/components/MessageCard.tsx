@@ -2,7 +2,7 @@ import { Show, createSignal } from 'solid-js'
 import { MessageSquare, Send } from 'lucide-solid'
 import { dispatchNuiMessage, isBrowser } from '@/lib/nui'
 import { createNuiEvent } from '@/primitives/createNuiEvent'
-import type { NuiMessage } from '@/types'
+import type { NuiMessage } from '@/types/index'
 import { Badge } from './Badge'
 import { Button } from './Button'
 
