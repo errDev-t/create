@@ -15,7 +15,9 @@ Lua, JavaScript or TypeScript backend. Optional framework wiring. Optional NUI. 
 
 ## Preview
 
-![ERR Create terminal preview](https://github.com/user-attachments/assets/3857cfe5-712d-4311-b5b1-55a3c59630e3)
+<p align="center">
+    <img src="./assets/preview.gif" />
+</p>
 
 *The interactive CLI, start to finish.*
 
